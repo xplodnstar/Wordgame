@@ -1,0 +1,44 @@
+html {box-sizing: border-box}
+*,*::before,*::after{box-sizing: inherit}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.gallows {
+    width: 800px;
+    margin: auto;
+}
+
+.noose {
+
+}
+
+#newGame {
+    width: 150px;
+    height: 30px;
+    background-color: darkgreen;
+    color: antiquewhite;
+    font-size: 18px;
+    outline: none;
+}
+
+.score {
+
+}
+
+.corral {
+
+}
+
+.word {
+    font-size: 60px;
+}
+
+.entry {
+
+}
+
+input {
+
+}
