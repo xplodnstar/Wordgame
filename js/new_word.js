@@ -8,7 +8,7 @@ var newGame = (function () {
     // replace the array elements with underscores
     var blanks = splitRand.map(function (letter) {
         return '_'
-    })
+    }).join(' ')
 
     I.subscribe('New Game', function (x) {
         // put blanks into word section
@@ -19,7 +19,7 @@ var newGame = (function () {
         word: randWord,
         blanks: blanks
     }
-})
+}())
 
 
 
