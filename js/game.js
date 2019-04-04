@@ -7,14 +7,18 @@ var newGame = (function () {
     var score = 5
 
     function init() {
-        // clear all fields
-        // $('.alpha').attr('disabled', false)
+        // clear all fields reset statuses
         var corral = []
         var letter = ''
         var score = 5
         document.querySelector('.score').innerHTML = `Tries left: ${score}`
         document.querySelector('.result').innerHTML = ''
         $('.alpha').attr('disabled', false)
+        $('#legs2').removeClass('hide')
+        $('#legs1').removeClass('hide')
+        $('.arms').removeClass('hide')
+        $('#torso').removeClass('hide')
+        $('.eyes').removeClass('hide')
 
         // limit list to words over 3 letters
         var wordList = commonWords.filter(function (item) {
@@ -34,8 +38,6 @@ var newGame = (function () {
 
         // put blanks into word section and create a string
         document.querySelector('.word').innerHTML = `${blanks.join(' ')}`
-
-        console.log("word: ", randWord)
     }
 
     $('.row').on('click', 'button', function (e) {
@@ -48,17 +50,12 @@ var newGame = (function () {
         // check the letter against the word
         var posi = splitRand.indexOf(letter)
 
-        // if wrong, place in the corral
+        // if wrong, dock score
         if (posi == -1) {
-            corral.push(letter)
             score -= 1
-            // document.querySelector('.corral').innerHTML = `${corral}`
-
-            document.querySelector('.score').innerHTML = `${score}`
-            // console.log("corral: ", corral)
+            document.querySelector('.score').innerHTML = `Tries left: ${score}`
         } else {
             // if right, place in the correct position of the word
-            //add the letter to the posi in spaces, then remake blanks
             for (let i = 0; i < randWord.length; i += 1) {
                 if (splitRand[i] === letter) {
                     blanks[i] = letter
@@ -66,16 +63,29 @@ var newGame = (function () {
             }
         }
 
-        console.log(blanks)
-
         // put new blanks into word section with letters and create a string
         document.querySelector('.word').innerHTML = `${blanks.join(' ')}`
 
+        // losing 
+        if (score === 4) {
+            $('#legs2').addClass('hide')
+        }
+        if (score === 3) {
+            $('#legs1').addClass('hide')
+        }
+        if (score === 2) {
+            $('.arms').addClass('hide')
+        }
+        if (score === 1) {
+            $('#torso').addClass('hide')
+        }
         if (score === 0) {
             document.querySelector('.result').innerHTML = `YOU LOSE!!!`
+            $('.eyes').addClass('hide')
             $('.alpha').attr('disabled', true)
         }
 
+        // winning
         if (blanks.indexOf('_') === -1) {
             document.querySelector('.result').innerHTML = `YOU WIN!!!`
             $('.alpha').attr('disabled', true)

@@ -8,11 +8,8 @@ body {
 .gallows {
     width: 800px;
     margin: auto;
+    
 }
-
-/* .noose {
-
-} */
 
 #newGame {
     width: 150px;
@@ -21,14 +18,24 @@ body {
     color: antiquewhite;
     font-size: 18px;
     outline: none;
+    border-radius: 5px;
+    margin: 0 325px;
 }
 
 .result {
     height: 50px;
     font-size: 40px;
+    color: blueviolet;
+    font-weight: bolder;
+    text-align: center;
 }
 
-/* .noose {
+.score {
+    font-size: 30px;
+    margin:  0 100px 10px;;
+}
+
+.noose {
     width: 500px;
     height: 500px;
     background-color: white;
@@ -43,7 +50,7 @@ body {
     background-color: bisque;
     border-radius: 50%;
     top: 0;
-    left: 200px;
+    left: 350px;
     z-index: 1;
 }
 
@@ -54,28 +61,29 @@ body {
     background-color: darkcyan;
     border-radius: 50%;
     z-index: 2;
-
+    transition-duration: 1s;
 }
 
 #eyes1 {
     top: 25px;
-    left: 225px;
+    left: 375px;
 }
 
 #eyes2 {
     top: 25px;
-    left: 265px;
+    left: 415px;
 }
 
-#torso {
+.torso {
     position: absolute;
     width: 150px;
     height: 250px;;
     background-color: lightslategray;
     border-radius: 20%;
     top: 100px;
-    left: 175px;
+    left: 325px;
     z-index: 1;
+    transition-duration: 1s;
 }
 
 .arms {
@@ -85,16 +93,17 @@ body {
     background-color: lightslategray;
     border-radius: 20%;
     z-index: 1;
+    transition-duration: 1s;
 }
 
 #arms1 {
     top: 150px;
-    left: 30px;
+    left: 175px;
 }
 
 #arms2 {
     top: 150px;
-    left: 320px;
+    left: 475px;
 }
 
 .legs {
@@ -104,21 +113,22 @@ body {
     background-color: lightslategray;
     border-radius: 20%;
     z-index: 1;
+    transition-duration: 1s;
 }
 
 #legs1 {
     top: 350px;
-    left: 200px;
+    left: 360px;
 }
 
 #legs2 {
     top: 350px;
-    left: 265px;
+    left: 420px;
 }
 
 .hide {
-    z-index: -1;
-} */
+    background-color: white;
+}
 
 /* .corral {
     width: 500px;
@@ -129,40 +139,28 @@ body {
 } */
 
 .word {
-    font-size: 60px;
+    font-size: 80px;
+    text-align: center;
+    margin: auto auto 10px;
 }
 
 .entry {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
 .alpha {
-    width: 4%;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
-    background-color: dodgerblue;
+    background-color: darkgreen;
+    color: antiquewhite;
     outline: none;
+    font-size: 30px;
 }
 
 .alpha:disabled {
     background-color: grey;
-
 }
-
-/* #guess {
-    width: 150px;
-    height: 30px;
-    font-size: 18px;
-    outline: none;
-}
-
-#check {
-    width: 75px;
-    height: 30px;
-    background-color: darkgreen;
-    color: antiquewhite;
-    font-size: 18px;
-    outline: none;
-} */
