@@ -10,9 +10,9 @@ body {
     margin: auto;
 }
 
-.noose {
+/* .noose {
 
-}
+} */
 
 #newGame {
     width: 150px;
@@ -23,25 +23,146 @@ body {
     outline: none;
 }
 
-.score {
+.result {
+    height: 50px;
+    font-size: 40px;
+}
+
+/* .noose {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+} 
+
+#head {
+    position: absolute;
+    width: 100px;
+    height: 100px;;
+    background-color: bisque;
+    border-radius: 50%;
+    top: 0;
+    left: 200px;
+    z-index: 1;
+}
+
+.eyes {
+    position: absolute;
+    width: 15px;
+    height: 15px;;
+    background-color: darkcyan;
+    border-radius: 50%;
+    z-index: 2;
 
 }
 
-.corral {
-
+#eyes1 {
+    top: 25px;
+    left: 225px;
 }
+
+#eyes2 {
+    top: 25px;
+    left: 265px;
+}
+
+#torso {
+    position: absolute;
+    width: 150px;
+    height: 250px;;
+    background-color: lightslategray;
+    border-radius: 20%;
+    top: 100px;
+    left: 175px;
+    z-index: 1;
+}
+
+.arms {
+    position: absolute;
+    width: 150px;
+    height: 30px;;
+    background-color: lightslategray;
+    border-radius: 20%;
+    z-index: 1;
+}
+
+#arms1 {
+    top: 150px;
+    left: 30px;
+}
+
+#arms2 {
+    top: 150px;
+    left: 320px;
+}
+
+.legs {
+    position: absolute;
+    width: 30px;
+    height: 100px;;
+    background-color: lightslategray;
+    border-radius: 20%;
+    z-index: 1;
+}
+
+#legs1 {
+    top: 350px;
+    left: 200px;
+}
+
+#legs2 {
+    top: 350px;
+    left: 265px;
+}
+
+.hide {
+    z-index: -1;
+} */
+
+/* .corral {
+    width: 500px;
+    height: 100px;
+    background-color: olivedrab;
+    border: double 10px brown;
+    padding: 10px;
+} */
 
 .word {
     font-size: 60px;
 }
 
 .entry {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.alpha {
+    width: 4%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    outline: none;
+}
+
+.alpha:disabled {
+    background-color: grey;
 
 }
 
-input {
+/* #guess {
     width: 150px;
     height: 30px;
     font-size: 18px;
     outline: none;
 }
+
+#check {
+    width: 75px;
+    height: 30px;
+    background-color: darkgreen;
+    color: antiquewhite;
+    font-size: 18px;
+    outline: none;
+} */

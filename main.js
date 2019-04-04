@@ -1,7 +1,13 @@
-var button = document.querySelector('#newGame')
+var start = document.querySelector('#newGame')
 
-button.addEventListener('click', function (e) {
+start.addEventListener('click', function (e) {
     e.preventDefault()
+    newGame.init()
+})
 
-    I.publish('New Game')
+var select = document.querySelector('.entry')
+
+select.addEventListener('click', function (e) {
+    e.preventDefault()
+    newGame.Guess()
 })

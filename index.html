@@ -11,27 +11,61 @@
 
 <body>
     <div class="gallows">
+        <button id="newGame">New Game</button>
+        <div class="result"></div>
+        <div class="score">Tries left:</div>
         <div class="noose">
-            <button id="newGame">New Game</button>
-            <div class="score">
-                Score
+            <div id="head"></div>
+            <div id="eyes1" class="eyes"></div>
+            <div id="eyes2" class="eyes"></div>
+            <div id="torso"></div>
+            <div id="arms1" class="arms"></div>
+            <div id="arms2" class="arms"></div>
+            <div id="legs1" class="legs"></div>
+            <div id="legs2" class="legs"></div>
+        </div>
+
+        <div class="word">Click New Game</div>
+        <div class="entry">
+            <!-- <input type="text" id="guess" maxlength="1">
+            <button id="check">Check</button> -->
+            <div class="row">
+                <button id="a" value="a" class="alpha">a</button>
+                <button id="b" value="b" class="alpha">b</button>
+                <button id="c" value="c" class="alpha">c</button>
+                <button id="d" value="d" class="alpha">d</button>
+                <button id="e" value="e" class="alpha">e</button>
+                <button id="f" value="f" class="alpha">f</button>
+                <button id="g" value="g" class="alpha">g</button>
+                <button id="h" value="h" class="alpha">h</button>
+                <button id="i" value="i" class="alpha">i</button>
+                <button id="j" value="j" class="alpha">j</button>
+                <button id="k" value="k" class="alpha">k</button>
+                <button id="l" value="l" class="alpha">l</button>
+                <button id="m" value="m" class="alpha">m</button>
+            </div>
+            <div class="row">
+                <button id="n" value="n" class="alpha">n</button>
+                <button id="o" value="o" class="alpha">o</button>
+                <button id="p" value="p" class="alpha">p</button>
+                <button id="q" value="q" class="alpha">q</button>
+                <button id="r" value="r" class="alpha">r</button>
+                <button id="s" value="s" class="alpha">s</button>
+                <button id="t" value="t" class="alpha">t</button>
+                <button id="u" value="u" class="alpha">u</button>
+                <button id="v" value="v" class="alpha">v</button>
+                <button id="w" value="w" class="alpha">w</button>
+                <button id="x" value="x" class="alpha">x</button>
+                <button id="y" value="y" class="alpha">y</button>
+                <button id="z" value="z" class="alpha">z</button>
             </div>
         </div>
-        <div class="corral">Corral</div>
-        <div class="word">Word</div>
-        <div class="entry">
-            <input type="text" id="guess">
-        </div>
+        <!-- <div class="corral">Corral</div> -->
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="./js/sub_pub.js"></script>
     <script src="./js/common-words.js"></script>
-    <script src="./js/new_word.js"></script>
-    <script src="./js/wrong_letter.js"></script>
-    <script src="./js/correct_letter.js"></script>
-    <script src="./js/lose_game.js"></script>
-    <script src="./js/win_game.js"></script>
+    <script src="./js/game.js"></script>
     <script src="./main.js"></script>
 </body>
 
