@@ -17,7 +17,7 @@ var newGame = (function () {
         $('#legs2').removeClass('hide')
         $('#legs1').removeClass('hide')
         $('.arms').removeClass('hide')
-        $('#torso').removeClass('hide')
+        $('.torso').removeClass('hide')
         $('.eyes').removeClass('hide')
 
         // limit list to words over 3 letters
@@ -77,7 +77,7 @@ var newGame = (function () {
             $('.arms').addClass('hide')
         }
         if (score === 1) {
-            $('#torso').addClass('hide')
+            $('.torso').addClass('hide')
         }
         if (score === 0) {
             document.querySelector('.result').innerHTML = `YOU LOSE!!!`
